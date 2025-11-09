@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88459A86-3A69-48E3-B8E8-D22F8F3A8A58}|Tests\\Tests.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\tests\\loginpagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88459A86-3A69-48E3-B8E8-D22F8F3A8A58}|Tests\\Tests.csproj|solutionrelative:tests\\loginpagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58438AB1-396D-44F9-B252-275222583B40}|WebPages\\WebPages.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\webpages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58438AB1-396D-44F9-B252-275222583B40}|WebPages\\WebPages.csproj|solutionrelative:webpages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\strategy\\findby\\findbymixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\strategy\\findby\\findbymixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\strategy\\elementfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\strategy\\elementfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\strategy\\ielementfindstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\strategy\\ielementfindstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\enums\\browsertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\enums\\browsertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\driver\\webdriverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,12 +31,16 @@
       "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\driver\\drivermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58438AB1-396D-44F9-B252-275222583B40}|WebPages\\WebPages.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\webpages\\indexpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58438AB1-396D-44F9-B252-275222583B40}|WebPages\\WebPages.csproj|solutionrelative:webpages\\indexpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88459A86-3A69-48E3-B8E8-D22F8F3A8A58}|Tests\\Tests.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\tests\\loginpagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88459A86-3A69-48E3-B8E8-D22F8F3A8A58}|Tests\\Tests.csproj|solutionrelative:tests\\loginpagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\enums\\browsertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\enums\\browsertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58438AB1-396D-44F9-B252-275222583B40}|WebPages\\WebPages.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\webpages\\indexpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58438AB1-396D-44F9-B252-275222583B40}|WebPages\\WebPages.csproj|solutionrelative:webpages\\indexpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88459A86-3A69-48E3-B8E8-D22F8F3A8A58}|Tests\\Tests.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\tests\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FindByMixed.cs",
+              "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Strategy\\FindBy\\FindByMixed.cs",
+              "RelativeDocumentMoniker": "Core\\Strategy\\FindBy\\FindByMixed.cs",
+              "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Strategy\\FindBy\\FindByMixed.cs",
+              "RelativeToolTip": "Core\\Strategy\\FindBy\\FindByMixed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T15:11:43.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -50,7 +79,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "Core.csproj",
+              "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Core.csproj",
+              "RelativeDocumentMoniker": "Core\\Core.csproj",
+              "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Core.csproj",
+              "RelativeToolTip": "Core\\Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-09T13:06:56.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ElementFinder.cs",
+              "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Strategy\\ElementFinder.cs",
+              "RelativeDocumentMoniker": "Core\\Strategy\\ElementFinder.cs",
+              "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Strategy\\ElementFinder.cs",
+              "RelativeToolTip": "Core\\Strategy\\ElementFinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T13:03:15.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IElementFindStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Strategy\\IElementFindStrategy.cs",
+              "RelativeDocumentMoniker": "Core\\Strategy\\IElementFindStrategy.cs",
+              "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Strategy\\IElementFindStrategy.cs",
+              "RelativeToolTip": "Core\\Strategy\\IElementFindStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T12:59:01.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Tests\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "Tests\\MSTestSettings.cs",
@@ -62,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "BrowserType.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Enums\\BrowserType.cs",
               "RelativeDocumentMoniker": "Core\\Enums\\BrowserType.cs",
@@ -70,11 +137,12 @@
               "RelativeToolTip": "Core\\Enums\\BrowserType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T15:41:10.809Z"
+              "WhenOpened": "2025-11-08T15:41:10.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "IndexPage.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\WebPages\\IndexPage.cs",
               "RelativeDocumentMoniker": "WebPages\\IndexPage.cs",
@@ -86,53 +154,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DriverManager.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Driver\\DriverManager.cs",
               "RelativeDocumentMoniker": "Core\\Driver\\DriverManager.cs",
               "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Driver\\DriverManager.cs",
               "RelativeToolTip": "Core\\Driver\\DriverManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T20:01:39.276Z"
+              "WhenOpened": "2025-11-07T20:01:39.276Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "WebDriverFactory.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Driver\\WebDriverFactory.cs",
               "RelativeDocumentMoniker": "Core\\Driver\\WebDriverFactory.cs",
               "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Driver\\WebDriverFactory.cs",
               "RelativeToolTip": "Core\\Driver\\WebDriverFactory.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBMAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwCIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T20:01:24.114Z"
+              "WhenOpened": "2025-11-07T20:01:24.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LoginPage.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\WebPages\\LoginPage.cs",
               "RelativeDocumentMoniker": "WebPages\\LoginPage.cs",
               "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\WebPages\\LoginPage.cs",
               "RelativeToolTip": "WebPages\\LoginPage.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T19:57:09.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "LoginPageTests.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Tests\\LoginPageTests.cs",
               "RelativeDocumentMoniker": "Tests\\LoginPageTests.cs",
               "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Tests\\LoginPageTests.cs",
               "RelativeToolTip": "Tests\\LoginPageTests.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwE0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T19:57:34.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T19:57:34.168Z"
             }
           ]
         }

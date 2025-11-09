@@ -11,3 +11,6 @@ C:\Users\gigat\source\repos\EpamFinalTask\WebPages\obj\Debug\net8.0\refint\WebPa
 C:\Users\gigat\source\repos\EpamFinalTask\WebPages\obj\Debug\net8.0\WebPages.pdb
 C:\Users\gigat\source\repos\EpamFinalTask\WebPages\obj\Debug\net8.0\ref\WebPages.dll
 C:\Users\gigat\source\repos\EpamFinalTask\WebPages\obj\Debug\net8.0\WebPages.sourcelink.json
+C:\Users\gigat\source\repos\EpamFinalTask\WebPages\bin\Debug\net8.0\Core.dll
+C:\Users\gigat\source\repos\EpamFinalTask\WebPages\bin\Debug\net8.0\Core.pdb
+C:\Users\gigat\source\repos\EpamFinalTask\WebPages\obj\Debug\net8.0\WebPages.csproj.Up2Date

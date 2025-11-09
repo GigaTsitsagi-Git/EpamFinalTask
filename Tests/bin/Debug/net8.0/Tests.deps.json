@@ -671,6 +671,7 @@
       },
       "WebPages/1.0.0": {
         "dependencies": {
+          "Core": "1.0.0",
           "Selenium.WebDriver": "4.38.0"
         },
         "runtime": {

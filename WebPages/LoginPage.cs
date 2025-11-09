@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using Core.Strategy;
+using Core.Strategy.FindBy;
 
 namespace WebPages
 {
@@ -9,17 +11,19 @@ namespace WebPages
 
         private readonly IWebDriver _driver;
         private readonly WebDriverWait _wait;
+        private readonly ElementFinder _elementFinder;
 
         //locators
         private readonly By _usernameInput = By.CssSelector("input[data-test='username']");
         private readonly By _passwordInput = By.CssSelector("input[data-test='password']");
         private readonly By _loginButton = By.CssSelector("input[data-test='login-button']");
-        private readonly By ErrorMessage = By.CssSelector("[data-test='error']");
+        private readonly By _errorMessage = By.CssSelector("[data-test='error']");
 
         public LoginPage(IWebDriver driver)
         {
             _driver = driver ?? throw new ArgumentException(nameof(driver));
             _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));
+            _elementFinder = new ElementFinder(new FindByMixed());
         }
 
         public LoginPage Open()
@@ -31,9 +35,9 @@ namespace WebPages
         // Method to clear text boxes by sending backspace keys instead of using Clear() method
         // clear does not work reliably with rapit execution of tests, so I used this workaround
         // selenium may think that the element is already cleared and go on to the next step too quickly
-        public LoginPage ClearTextBox(By textBox)
+        public LoginPage ClearTextBox(By locator)
         {
-            var element = _wait.Until(driver => driver.FindElement(textBox));
+            var element = _wait.Until(driver => _elementFinder.Find(driver, locator));
 
             var value = element.GetAttribute("value");
             while (!string.IsNullOrEmpty(value))
@@ -65,7 +69,7 @@ namespace WebPages
 
         public LoginPage EnterUsername(string username)
         {
-            _wait.Until(driver => driver.FindElement(_usernameInput)).SendKeys(username);
+            _wait.Until(driver => _elementFinder.Find(driver, _usernameInput)).SendKeys(username);
             return this;
         }
         public LoginPage ClearUsername()
@@ -75,7 +79,7 @@ namespace WebPages
         }
         public LoginPage EnterPassword(string password)
         {
-            _wait.Until(driver => driver.FindElement(_passwordInput)).SendKeys(password);
+            _wait.Until(driver => _elementFinder.Find(driver, _passwordInput)).SendKeys(password);
             return this;
         }
 
@@ -86,7 +90,7 @@ namespace WebPages
         }
         public LoginPage ClickLoginButton()
         {
-            _wait.Until(driver => driver.FindElement(_loginButton)).Click();
+            _wait.Until(driver => _elementFinder.Find(driver, _loginButton)).Click();
             return this;
         }
 
@@ -95,7 +99,7 @@ namespace WebPages
         {
             return _wait.Until(driver =>
             {
-                var element = driver.FindElement(ErrorMessage);
+                var element = _elementFinder.Find(driver, _errorMessage);
                 return element.Displayed ? element : null;
             }).Text;
         }
@@ -104,7 +108,8 @@ namespace WebPages
         {
             try
             {
-                return _wait.Until(driver => driver.FindElement(ErrorMessage).Displayed);
+                var element = _wait.Until(driver => _elementFinder.Find(driver, _errorMessage));
+                return element.Displayed;
             }
             catch (WebDriverTimeoutException)
             {
