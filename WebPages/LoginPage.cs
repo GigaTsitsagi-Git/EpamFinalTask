@@ -56,6 +56,13 @@ namespace WebPages
             return new IndexPage(_driver);
         }
 
+        public LoginPage EnterUsernameAndPassword(string username, string password)
+        {
+            EnterUsername(username);
+            EnterPassword(password);
+            return this;
+        }
+
         public LoginPage EnterUsername(string username)
         {
             _wait.Until(driver => driver.FindElement(_usernameInput)).SendKeys(username);
@@ -83,7 +90,7 @@ namespace WebPages
             return this;
         }
 
-        // Method to get error message
+        // Methods related to errors
         public string GetErrorMessage()
         {
             return _wait.Until(driver =>

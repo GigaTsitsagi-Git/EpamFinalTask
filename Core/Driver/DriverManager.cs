@@ -1,10 +1,6 @@
 ﻿using Core.Enums;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Serilog;
 
 namespace Core.Driver
 {
@@ -18,16 +14,28 @@ namespace Core.Driver
         public static void Start(BrowserType browserType)
         {
             if (_driver != null)
+            {
+                Log.Warning("Driver already initialized. Skipping driver start.");
                 return;
+            }
 
+            Log.Information("Starting WebDriver for browser: {BrowserType}", browserType);
             _driver ??= WebDriverFactory.Create(browserType);
-
+            Log.Information("WebDriver started successfully for browser: {BrowserType}", browserType);
         }
 
         public static void Quit()
         {
-            _driver?.Quit();
+            if (_driver == null)
+            {
+                Log.Warning("Attempted to quit driver, but driver is null.");
+                return;
+            }
+
+            Log.Information("Quitting WebDriver");
+            _driver.Quit();
             _driver = null;
+            Log.Information("WebDriver quit successfully");
         }
     }
 }

@@ -175,3 +175,8 @@ C:\Users\gigat\source\repos\EpamFinalTask\Tests\obj\Debug\net8.0\Tests.genruntim
 C:\Users\gigat\source\repos\EpamFinalTask\Tests\obj\Debug\net8.0\ref\Tests.dll
 C:\Users\gigat\source\repos\EpamFinalTask\Tests\bin\Debug\net8.0\Core.dll
 C:\Users\gigat\source\repos\EpamFinalTask\Tests\bin\Debug\net8.0\Core.pdb
+C:\Users\gigat\source\repos\EpamFinalTask\Tests\obj\Debug\net8.0\Tests.sourcelink.json
+C:\Users\gigat\source\repos\EpamFinalTask\Tests\bin\Debug\net8.0\Serilog.dll
+C:\Users\gigat\source\repos\EpamFinalTask\Tests\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\gigat\source\repos\EpamFinalTask\Tests\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\gigat\source\repos\EpamFinalTask\Tests\bin\Debug\net8.0\Serilog.Sinks.File.dll
