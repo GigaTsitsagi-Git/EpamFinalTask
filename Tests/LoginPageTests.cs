@@ -40,7 +40,7 @@ namespace Tests
         }
 
         [TestMethod]
-        [DynamicData(nameof(BrowserData.Provider), typeof(BrowserData), DynamicDataSourceType.Method)]
+        [DynamicData(nameof(BrowserData.Browser), typeof(BrowserData), DynamicDataSourceType.Method)]
         public void Login_EmptyUsername_ShowsUsernameRequiredError(BrowserType browser)
         {
             Log.Information("Executing test: Login_EmptyUsername_ShowsUsernameRequiredError with browser: {Browser}", browser);
@@ -55,13 +55,14 @@ namespace Tests
 
             var errorMessage = _loginPage.GetErrorMessage();
             Log.Information("Error message received: {ErrorMessage}", errorMessage);
+
             Assert.AreEqual(errorMessage, Error.UsernameRequired);
             Log.Information("Test passed: Username required error displayed correctly");
         }
 
 
         [TestMethod]
-        [DynamicData(nameof(BrowserData.Provider), typeof(BrowserData), DynamicDataSourceType.Method)]
+        [DynamicData(nameof(BrowserData.Browser), typeof(BrowserData), DynamicDataSourceType.Method)]
         public void Login_EmptyPassword_ShowsUsernameRequiredError(BrowserType browser)
         {
             Log.Information("Executing test: Login_EmptyPassword_ShowsUsernameRequiredError with browser: {Browser}", browser);
@@ -75,12 +76,13 @@ namespace Tests
 
             var errorMessage = _loginPage.GetErrorMessage();
             Log.Information("Error message received: {ErrorMessage}", errorMessage);
+
             Assert.AreEqual(errorMessage, Error.PasswordRequired);
             Log.Information("Test passed: Password required error displayed correctly");
         }
 
         [TestMethod]
-        [DynamicData(nameof(BrowserData.Provider), typeof(BrowserData), DynamicDataSourceType.Method)]
+        [DynamicData(nameof(BrowserData.Browser), typeof(BrowserData), DynamicDataSourceType.Method)]
         public void Login_ValidCredentials_SuccessfulLogin(BrowserType browser)
         {
             Log.Information("Executing test: Login_ValidCredentials_SuccessfulLogin with browser: {Browser}", browser);
@@ -89,6 +91,7 @@ namespace Tests
             Log.Debug("Attempting login with valid credentials");
             var result = _loginPage!.Open().LogIn(_username, _password).AppLogoExists();
             Log.Information("Login result: {Result}, App logo exists: {AppLogoExists}", result ? "Success" : "Failed", result);
+
             Assert.IsTrue(result);
             Log.Information("Test passed: Successful login verified");
         }
