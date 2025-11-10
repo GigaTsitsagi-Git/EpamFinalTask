@@ -10,9 +10,6 @@ namespace Tests
     {
         private LoginPage? _loginPage;
 
-        private readonly string _username = "standard_user"; // add locator for username and password
-        private readonly string _password = "secret_sauce";
-
         public TestContext TestContext { get; set; } = null!;
 
         [ClassInitialize]
@@ -48,7 +45,7 @@ namespace Tests
 
             Log.Debug("Opening login page and entering credentials");
             _loginPage!.Open()
-                .EnterUsernameAndPassword(_username, _password)
+                .EnterUsernameAndPassword()
                 .ClearUsername()
                 .ClearPassword()
                 .ClickLoginButton();
@@ -70,7 +67,7 @@ namespace Tests
 
             Log.Debug("Opening login page, entering username, clearing password");
             _loginPage!.Open()
-                .EnterUsernameAndPassword(_username, _password)
+                .EnterUsernameAndPassword()
                 .ClearPassword()
                 .ClickLoginButton();
 
@@ -89,8 +86,10 @@ namespace Tests
             StartTest(browser);
 
             Log.Debug("Attempting login with valid credentials");
-            var result = _loginPage!.Open().LogIn(_username, _password).AppLogoExists();
+            var result = _loginPage!.Open().LogIn().AppLogoExists();
             Log.Information("Login result: {Result}, App logo exists: {AppLogoExists}", result ? "Success" : "Failed", result);
+
+
 
             Assert.IsTrue(result);
             Log.Information("Test passed: Successful login verified");

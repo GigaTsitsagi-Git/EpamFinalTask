@@ -1,7 +1,8 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using Core.Strategy;
+﻿using Core.Strategy;
 using Core.Strategy.FindBy;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System.Xml.Linq;
 
 namespace WebPages
 {
@@ -18,6 +19,8 @@ namespace WebPages
         private readonly By _passwordInput = By.CssSelector("input[data-test='password']");
         private readonly By _loginButton = By.CssSelector("input[data-test='login-button']");
         private readonly By _errorMessage = By.CssSelector("[data-test='error']");
+        private readonly By _loginCredentials = By.CssSelector("div[data-test='login-credentials']");   
+        private readonly By _loginPassword = By.CssSelector("div[data-test='login-password']");   
 
         public LoginPage(IWebDriver driver)
         {
@@ -49,9 +52,9 @@ namespace WebPages
         }
 
         // Methods to perform login actions (enter username/password, click login, or full login)
-        public IndexPage LogIn(string username, string password)
+        public IndexPage LogIn()
         {
-            EnterUsername(username).EnterPassword(password).ClickLoginButton();
+            EnterUsername(GetUsername()).EnterPassword(GetPassword()).ClickLoginButton();
 
             if(IsErrorMessageDisplayed())
             {
@@ -60,10 +63,10 @@ namespace WebPages
             return new IndexPage(_driver);
         }
 
-        public LoginPage EnterUsernameAndPassword(string username, string password)
+        public LoginPage EnterUsernameAndPassword()
         {
-            EnterUsername(username);
-            EnterPassword(password);
+            EnterUsername(GetUsername());
+            EnterPassword(GetPassword());
             return this;
         }
 
@@ -81,6 +84,28 @@ namespace WebPages
         {
             _wait.Until(driver => _elementFinder.Find(driver, _passwordInput)).SendKeys(password);
             return this;
+        }
+
+        public string GetUsername()
+        {
+            var element = _wait.Until(driver =>
+            {
+                var element = _elementFinder.Find(driver, _loginCredentials);
+                return element.Displayed ? element : null;
+            }).Text;
+
+            return element.Split('\n')[1];
+        }
+
+        public string GetPassword() // returns "Password for all users: secret_sauce" so it need to split and take last part
+        {
+            var element = _wait.Until(driver =>
+            {
+                var element = _elementFinder.Find(driver, _loginPassword);
+                return element.Displayed ? element : null;
+            }).Text;
+
+            return element.Split('\n').Last().Trim();
         }
 
         public LoginPage ClearPassword()
