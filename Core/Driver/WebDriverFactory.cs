@@ -33,52 +33,51 @@ namespace Core.Driver
 
         private static IWebDriver CreateChromeDriver()
         {
-            Log.Debug("Creating ChromeDriver with normal page load strategy");
-            var options = new ChromeOptions();
-            options.PageLoadStrategy = PageLoadStrategy.Normal;
-            var driver = new ChromeDriver(options);
+            var options = new ChromeOptions { PageLoadStrategy = PageLoadStrategy.Eager };
+            foreach (var arg in SharedArguments) options.AddArgument(arg);
             Log.Debug("ChromeDriver created successfully");
-            return driver;
+            return new ChromeDriver(options);
         }
 
         private static IWebDriver CreateFirefoxDriver()
         {
-            Log.Debug("Creating FirefoxDriver with normal page load strategy");
-            var options = new FirefoxOptions();
-            options.PageLoadStrategy = PageLoadStrategy.Normal;
-            var driver = new FirefoxDriver(options);
+            var options = new FirefoxOptions { PageLoadStrategy = PageLoadStrategy.Eager };
+            foreach (var arg in SharedArguments) options.AddArgument(arg);
             Log.Debug("FirefoxDriver created successfully");
-            return driver;
+            return new FirefoxDriver(options);
         }
 
         private static IWebDriver CreateEdgeDriver()
         {
-            Log.Debug("Creating EdgeDriver with normal page load strategy");
-            var options = new EdgeOptions();
-            options.PageLoadStrategy = PageLoadStrategy.Normal;
-            var driver = new EdgeDriver(options);
+            var options = new EdgeOptions { PageLoadStrategy = PageLoadStrategy.Eager };
+            foreach (var arg in SharedArguments) options.AddArgument(arg);
             Log.Debug("EdgeDriver created successfully");
-            return driver;
+            return new EdgeDriver(options);
         }
 
         private static IWebDriver CreateSafariDriver()
         {
-            Log.Debug("Creating EdgeDriver with normal page load strategy");
             var options = new SafariOptions();
             options.PageLoadStrategy = PageLoadStrategy.Normal;
             var driver = new SafariDriver(options);
-            Log.Debug("EdgeDriver created successfully");
+            Log.Debug("Safari created successfully");
             return driver;
         }
 
         private static IWebDriver CreateInternetExplorerDriver()
         {
-            Log.Debug("Creating EdgeDriver with normal page load strategy");
             var options = new InternetExplorerOptions();
             options.PageLoadStrategy = PageLoadStrategy.Normal;
             var driver = new InternetExplorerDriver(options);
-            Log.Debug("EdgeDriver created successfully");
+            Log.Debug("Internet Explorer created successfully");
             return driver;
         }
+
+        // Shared browser arguments
+        private static IEnumerable<string> SharedArguments =>
+        [
+            "--disable-infobars",
+            "--disable-extensions",
+        ];
     }
 }

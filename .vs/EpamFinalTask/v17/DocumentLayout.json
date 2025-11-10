@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\core\\driver\\webdriverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5F4907-DC2B-4A6A-92AC-1C52BAA9FF4A}|Core\\Core.csproj|solutionrelative:core\\driver\\webdriverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88459A86-3A69-48E3-B8E8-D22F8F3A8A58}|Tests\\Tests.csproj|c:\\users\\gigat\\source\\repos\\epamfinaltask\\tests\\loginpagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88459A86-3A69-48E3-B8E8-D22F8F3A8A58}|Tests\\Tests.csproj|solutionrelative:tests\\loginpagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebDriverFactory.cs",
+              "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Driver\\WebDriverFactory.cs",
+              "RelativeDocumentMoniker": "Core\\Driver\\WebDriverFactory.cs",
+              "ToolTip": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Driver\\WebDriverFactory.cs",
+              "RelativeToolTip": "Core\\Driver\\WebDriverFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:18:12.595Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -30,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginPage.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\WebPages\\LoginPage.cs",
               "RelativeDocumentMoniker": "WebPages\\LoginPage.cs",
@@ -38,12 +55,11 @@
               "RelativeToolTip": "WebPages\\LoginPage.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAIwGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T18:49:57.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T18:49:57.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoginPageTests.cs",
               "DocumentMoniker": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Tests\\LoginPageTests.cs",
               "RelativeDocumentMoniker": "Tests\\LoginPageTests.cs",
