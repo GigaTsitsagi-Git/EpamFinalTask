@@ -40,8 +40,7 @@ namespace Tests
         }
 
         [TestMethod]
-        [DataRow(BrowserType.Edge)]
-        [DataRow(BrowserType.Firefox)]
+        [DynamicData(nameof(BrowserData.Provider), typeof(BrowserData), DynamicDataSourceType.Method)]
         public void Login_EmptyUsername_ShowsUsernameRequiredError(BrowserType browser)
         {
             Log.Information("Executing test: Login_EmptyUsername_ShowsUsernameRequiredError with browser: {Browser}", browser);
@@ -62,8 +61,7 @@ namespace Tests
 
 
         [TestMethod]
-        [DataRow(BrowserType.Edge)]
-        [DataRow(BrowserType.Firefox)]
+        [DynamicData(nameof(BrowserData.Provider), typeof(BrowserData), DynamicDataSourceType.Method)]
         public void Login_EmptyPassword_ShowsUsernameRequiredError(BrowserType browser)
         {
             Log.Information("Executing test: Login_EmptyPassword_ShowsUsernameRequiredError with browser: {Browser}", browser);
@@ -82,8 +80,7 @@ namespace Tests
         }
 
         [TestMethod]
-        [DataRow(BrowserType.Edge)]
-        [DataRow(BrowserType.Firefox)]
+        [DynamicData(nameof(BrowserData.Provider), typeof(BrowserData), DynamicDataSourceType.Method)]
         public void Login_ValidCredentials_SuccessfulLogin(BrowserType browser)
         {
             Log.Information("Executing test: Login_ValidCredentials_SuccessfulLogin with browser: {Browser}", browser);
