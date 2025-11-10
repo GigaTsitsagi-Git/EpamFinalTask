@@ -3,13 +3,15 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
+using OpenQA.Selenium.Safari;
 using Serilog;
 
 namespace Core.Driver
 {
     public static class WebDriverFactory
     {
-        public static IWebDriver Create(BrowserType browsertype)
+        public static IWebDriver Create(BrowserType browsertype) // search option for improvement
         {
             Log.Debug("Creating WebDriver for browser type: {BrowserType}", browsertype);
             
@@ -18,6 +20,8 @@ namespace Core.Driver
                 BrowserType.Chrome => CreateChromeDriver(),
                 BrowserType.Firefox => CreateFirefoxDriver(),
                 BrowserType.Edge => CreateEdgeDriver(),
+                BrowserType.Safari=> CreateSafariDriver(),
+                BrowserType.InternetExplorer => CreateInternetExplorerDriver(),
                 _ => throw new ArgumentException($"Unsupported browser: {browsertype}")
             };
             
@@ -53,6 +57,26 @@ namespace Core.Driver
             var options = new EdgeOptions();
             options.PageLoadStrategy = PageLoadStrategy.Normal;
             var driver = new EdgeDriver(options);
+            Log.Debug("EdgeDriver created successfully");
+            return driver;
+        }
+
+        private static IWebDriver CreateSafariDriver()
+        {
+            Log.Debug("Creating EdgeDriver with normal page load strategy");
+            var options = new SafariOptions();
+            options.PageLoadStrategy = PageLoadStrategy.Normal;
+            var driver = new SafariDriver(options);
+            Log.Debug("EdgeDriver created successfully");
+            return driver;
+        }
+
+        private static IWebDriver CreateInternetExplorerDriver()
+        {
+            Log.Debug("Creating EdgeDriver with normal page load strategy");
+            var options = new InternetExplorerOptions();
+            options.PageLoadStrategy = PageLoadStrategy.Normal;
+            var driver = new InternetExplorerDriver(options);
             Log.Debug("EdgeDriver created successfully");
             return driver;
         }

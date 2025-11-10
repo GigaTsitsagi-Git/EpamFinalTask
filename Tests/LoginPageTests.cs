@@ -10,7 +10,7 @@ namespace Tests
     {
         private LoginPage? _loginPage;
 
-        private readonly string _username = "standard_user";
+        private readonly string _username = "standard_user"; // add locator for username and password
         private readonly string _password = "secret_sauce";
 
         public TestContext TestContext { get; set; } = null!;
@@ -56,7 +56,7 @@ namespace Tests
             var errorMessage = _loginPage.GetErrorMessage();
             Log.Information("Error message received: {ErrorMessage}", errorMessage);
 
-            Assert.AreEqual(errorMessage, Error.UsernameRequired);
+            Assert.AreEqual(errorMessage, ErrorMessage.UsernameRequired);
             Log.Information("Test passed: Username required error displayed correctly");
         }
 
@@ -77,7 +77,7 @@ namespace Tests
             var errorMessage = _loginPage.GetErrorMessage();
             Log.Information("Error message received: {ErrorMessage}", errorMessage);
 
-            Assert.AreEqual(errorMessage, Error.PasswordRequired);
+            Assert.AreEqual(errorMessage, ErrorMessage.PasswordRequired);
             Log.Information("Test passed: Password required error displayed correctly");
         }
 

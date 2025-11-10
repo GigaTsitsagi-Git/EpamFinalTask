@@ -17,8 +17,6 @@ namespace WebPages
         //locators
         private readonly By _primaryHeader = By.CssSelector("div[data-test='primary-header']");
         private readonly By _appLogo = By.CssSelector(".app_logo");
-        private readonly By _inventoryContainer = By.CssSelector("#inventory_Container");
-        private readonly By _inventoryList = By.CssSelector("div[data-test='inventory-list']");
 
         public IndexPage(IWebDriver driver)
         {

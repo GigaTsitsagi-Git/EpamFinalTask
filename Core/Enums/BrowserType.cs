@@ -5,6 +5,8 @@ namespace Core.Enums
     {
         Chrome,
         Firefox,
-        Edge
+        Edge,
+        Safari,
+        InternetExplorer
     }
 }
