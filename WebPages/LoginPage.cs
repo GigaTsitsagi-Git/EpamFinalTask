@@ -2,7 +2,6 @@
 using Core.Strategy.FindBy;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System.Xml.Linq;
 
 namespace WebPages
 {

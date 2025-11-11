@@ -2,6 +2,7 @@
 using Core.Enums;
 using Serilog;
 using WebPages;
+using FluentAssertions;
 
 namespace Tests
 {
@@ -53,7 +54,8 @@ namespace Tests
             var errorMessage = _loginPage.GetErrorMessage();
             Log.Information("Error message received: {ErrorMessage}", errorMessage);
 
-            Assert.AreEqual(errorMessage, ErrorMessage.UsernameRequired);
+            errorMessage.Should().Be(ErrorMessage.UsernameRequired);
+
             Log.Information("Test passed: Username required error displayed correctly");
         }
 
@@ -74,7 +76,8 @@ namespace Tests
             var errorMessage = _loginPage.GetErrorMessage();
             Log.Information("Error message received: {ErrorMessage}", errorMessage);
 
-            Assert.AreEqual(errorMessage, ErrorMessage.PasswordRequired);
+            errorMessage.Should().Be(ErrorMessage.PasswordRequired);
+
             Log.Information("Test passed: Password required error displayed correctly");
         }
 
@@ -90,8 +93,7 @@ namespace Tests
             Log.Information("Login result: {Result}, App logo exists: {AppLogoExists}", result ? "Success" : "Failed", result);
 
 
-
-            Assert.IsTrue(result);
+            result.Should().BeTrue();
             Log.Information("Test passed: Successful login verified");
         }
 
