@@ -6,7 +6,7 @@ using FluentAssertions;
 namespace Tests.BDD.StepDefinition
 {
 	[Binding]
-	public sealed class LoginSteps
+    public sealed class LoginSteps
 	{
 		[Given(@"I run on (.*)")]
 		public static void GivenIRunOnBrowser(string browser) { }

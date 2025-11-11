@@ -11,7 +11,7 @@ namespace Core.Driver
 {
     public static class WebDriverFactory
     {
-        public static IWebDriver Create(BrowserType browsertype) // search option for improvement
+        public static IWebDriver Create(BrowserType browsertype)
         {
             Log.Debug("Creating WebDriver for browser type: {BrowserType}", browsertype);
             
@@ -57,8 +57,7 @@ namespace Core.Driver
 
         private static IWebDriver CreateSafariDriver()
         {
-            var options = new SafariOptions();
-            options.PageLoadStrategy = PageLoadStrategy.Normal;
+            var options = new SafariOptions() { PageLoadStrategy = PageLoadStrategy.Eager };
             var driver = new SafariDriver(options);
             Log.Debug("Safari created successfully");
             return driver;
@@ -66,8 +65,7 @@ namespace Core.Driver
 
         private static IWebDriver CreateInternetExplorerDriver()
         {
-            var options = new InternetExplorerOptions();
-            options.PageLoadStrategy = PageLoadStrategy.Normal;
+            var options = new InternetExplorerOptions() { PageLoadStrategy = PageLoadStrategy.Eager };
             var driver = new InternetExplorerDriver(options);
             Log.Debug("Internet Explorer created successfully");
             return driver;
@@ -78,6 +76,7 @@ namespace Core.Driver
         [
             "--disable-infobars",
             "--disable-extensions",
+            "--disable-notifications",
         ];
     }
 }

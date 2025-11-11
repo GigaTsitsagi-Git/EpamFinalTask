@@ -20,7 +20,7 @@ namespace Core.Driver
             }
 
             Log.Information("Starting WebDriver for browser: {BrowserType}", browserType);
-            _driver ??= WebDriverFactory.Create(browserType);
+            _driver = WebDriverFactory.Create(browserType);
             Log.Information("WebDriver started successfully for browser: {BrowserType}", browserType);
         }
 
