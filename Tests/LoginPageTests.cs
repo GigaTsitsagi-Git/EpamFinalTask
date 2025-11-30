@@ -46,7 +46,8 @@ namespace Tests
 
             Log.Debug("Opening login page and entering credentials");
             _loginPage!.Open()
-                .EnterUsernameAndPassword()
+                .EnterUsername(_loginPage.GetUsername)
+                .EnterPassword(_loginPage.GetPassword)
                 .ClearUsername()
                 .ClearPassword()
                 .ClickLoginButton();
@@ -69,7 +70,8 @@ namespace Tests
 
             Log.Debug("Opening login page, entering username, clearing password");
             _loginPage!.Open()
-                .EnterUsernameAndPassword()
+                .EnterUsername(_loginPage.GetUsername)
+                .EnterPassword(_loginPage.GetPassword)
                 .ClearPassword()
                 .ClickLoginButton();
 

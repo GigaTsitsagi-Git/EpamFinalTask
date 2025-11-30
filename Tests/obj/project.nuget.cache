@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fBEK1Ho1Oxc=",
+  "dgSpecHash": "/GSmJRjy9E0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\gigat\\Source\\Repos\\EpamFinalTask\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gigat\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\gigat\\.nuget\\packages\\fluentassertions\\8.8.0\\fluentassertions.8.8.0.nupkg.sha512",

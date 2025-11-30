@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZJrZlBcahdY=",
+  "dgSpecHash": "ZMxudD/GeKU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\gigat\\Source\\Repos\\EpamFinalTask\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gigat\\.nuget\\packages\\selenium.webdriver\\4.38.0\\selenium.webdriver.4.38.0.nupkg.sha512",
     "C:\\Users\\gigat\\.nuget\\packages\\serilog\\4.1.0\\serilog.4.1.0.nupkg.sha512",

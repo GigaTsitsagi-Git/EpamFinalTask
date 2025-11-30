@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Core.csproj": {}
+    "C:\\Users\\gigat\\Source\\Repos\\EpamFinalTask\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Core.csproj": {
+    "C:\\Users\\gigat\\Source\\Repos\\EpamFinalTask\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\gigat\\Source\\Repos\\EpamFinalTask\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\gigat\\Source\\Repos\\EpamFinalTask\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\gigat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gigat\\source\\repos\\EpamFinalTask\\Core\\obj\\",
+        "outputPath": "C:\\Users\\gigat\\Source\\Repos\\EpamFinalTask\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

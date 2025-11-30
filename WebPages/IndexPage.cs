@@ -1,50 +1,26 @@
-﻿using Core.Strategy;
-using Core.Strategy.FindBy;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
 
 namespace WebPages
 {
-    public class IndexPage
+    public class IndexPage : BasePage
     {
         public static string Url { get; } = "https://www.saucedemo.com/inventory.html";
 
-        private readonly IWebDriver _driver;
-        private readonly WebDriverWait _wait;
-        private readonly ElementFinder _elementFinder;
-
-
-        //locators
         private readonly By _primaryHeader = By.CssSelector("div[data-test='primary-header']");
         private readonly By _appLogo = By.CssSelector(".app_logo");
 
-        public IndexPage(IWebDriver driver)
-        {
-            _driver = driver ?? throw new ArgumentException(nameof(driver));
-            _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));
-            _elementFinder = new ElementFinder(new FindByMixed());
-        }
+        public IndexPage(IWebDriver driver) : base(driver) { }
 
         public IndexPage Open()
         {
-            _driver.Navigate().GoToUrl(Url);
+            Driver.Navigate().GoToUrl(Url);
             return this;
         }
 
         public bool AppLogoExists()
         {
-            var primaryHeader = _wait.Until(driver =>
-            {
-                var element = _elementFinder.Find(driver, _primaryHeader);
-                return element.Displayed ? element : null;
-            });
-
-            var appLogo = _wait.Until(driver =>
-            {
-                var element = _elementFinder.Find(driver, _appLogo);
-                return element.Displayed ? element : null;
-            });
-            return appLogo.Displayed;
+            WaitForVisible(_primaryHeader);
+            return WaitForVisible(_appLogo).Displayed;
         }
     }
 }

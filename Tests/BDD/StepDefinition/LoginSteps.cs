@@ -23,7 +23,7 @@ namespace Tests.BDD.StepDefinition
 		public void WhenIEnterValidUsernameAndPassword()
 		{
 			EnsureLoginPage();
-			_loginPage.EnterUsernameAndPassword();
+			_loginPage.EnterUsername(_loginPage.GetUsername).EnterPassword(_loginPage.GetPassword);
 		}
 
 		[When(@"I click the login button")]
